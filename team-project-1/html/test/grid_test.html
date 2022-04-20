@@ -1,0 +1,55 @@
+<!-- grid -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <style>
+        .grid {
+            width: 1000px;
+            height: 1000px;
+            margin: 0 auto;
+            background-color: dimgrey;
+            overflow: hidden; /*부모 높이를 잊어벼리기때문에 다시 높이를 생기게끔해주는 float해재 기법*/
+        }
+
+        .grid_item {
+            width: 500px;
+            height: 300px;
+            float: left; /*가로 정렬을 하기위한 float*/
+        }
+        .grid_item.first {
+            background-color: orange;
+            width: 300px;
+            height: 300px;
+            margin-top: 300px;
+        }
+        .grid_item.two {
+            background-color: yellow;
+            height: 700px;
+            width: 620px;
+            margin-top: 100px;
+            margin-left: 60px;
+        }
+        .grid_item.third {
+            margin-top: 100px;
+
+            height: 150px;
+            background-color: royalblue;
+        }
+    </style>
+    <body>
+        <div class="grid">
+            <div class="grid_item first"><img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" /></div>
+            <div class="grid_item two">
+                <h1>안녕하세요, 저는 킹콩파워팀의 OO입니다!</h1>
+                <h2>소제목</h2>
+                <h3>자기소개 글</h3>
+            </div>
+            <!-- <div class="grid_item third"></div> -->
+        </div>
+    </body>
+</html>

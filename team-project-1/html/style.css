@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'YeolrinGothic-Medium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/YeolrinGothic-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LeferiPoint-WhiteObliqueA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-WhiteObliqueA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.wrap {
+    /* max-width: 500px; */
+    background-color: white;
+}
+.grid {
+    width: 1000px;
+    height: 1000px;
+    margin: 0 auto;
+    background-color: #efe8d5;
+    overflow: hidden; /*부모 높이를 잊어벼리기때문에 다시 높이를 생기게끔해주는 float해재 기법*/
+}
+
+.grid_item {
+    width: 500px;
+    height: 300px;
+    float: left; /*가로 정렬을 하기위한 float*/
+}
+.grid_item.first {
+    /* background-color: orange; */
+    width: 28%;
+    height: 500px;
+    margin: 300px 30px 30px 30px;
+}
+.grid_item.two {
+    /* background-color: yellow; */
+    height: 700px;
+    width: 62%;
+    margin: 100px auto auto auto;
+}
+.grid_item.third {
+    margin-top: 100px;
+
+    height: 150px;
+    background-color: royalblue;
+}
+
+.w-btn {
+    position: relative;
+    border: none;
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 15px;
+    font-family: 'paybooc-Light', sans-serif;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.25s;
+}
+
+.w-btn-green {
+    background-color: #77af9c;
+    color: #d7fff1;
+}
+
+.w-btn:hover {
+    letter-spacing: 2px;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.w-btn:active {
+    transform: scale(1.5);
+}
