@@ -1,11 +1,21 @@
 * {
     font-family: 'Gowun Dodum', sans-serif;
 }
+.wrap {
+    height: 1000px;
+    margin-bottom: 100px;
+    margin-top: 30px;
+}
+.wraptitle {
+    width: 80%;
+    margin: auto;
+}
 .title {
     width: 100%;
     height: 250px;
     border-radius: 10px;
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('http://www.earlyadopter.co.kr/wp-content/uploads/2020/03/Animal_Crossing_1-1024x683.jpg');
+    background-image: linear-gradient(0deg, rgba(100, 100, 100, 0.5), rgba(255, 255, 255, 0.5)),
+        url('https://mblogthumb-phinf.pstatic.net/MjAyMDEwMDVfNjkg/MDAxNjAxODgzMTQzNTY0.Tb-uAsW6brXmC7CfDVo68MkejTR01IN7GtZcLsWMYfgg.5TLNEtI2xjfuu98X6wBX96Jwxbbfk8sT1auEl5jaKcAg.JPEG.jbmaeng2/1.jpg?type=w800');
     background-position: center;
     background-size: cover;
 
@@ -25,16 +35,9 @@
     align-items: center;
     justify-content: center;
 }
-
-.wraptitle {
-    width: 80%;
-    margin: auto;
-}
 .wrapcard {
     width: 50%;
     margin: auto;
-}
-.wrap {
 }
 .center {
     align-items: center;
@@ -55,33 +58,11 @@
     font-weight: 600;
     transition: 0.25s;
 }
-
-.w-btn-green {
-    background-color: #77af9c;
-    color: #d7fff1;
-}
-
 .w-btn:hover {
     letter-spacing: 2px;
     transform: scale(1.1);
     cursor: pointer;
 }
-
 .w-btn:active {
     transform: scale(1.5);
-}
-
-.list {
-    width: 500px;
-    margin: 60px auto 0px auto;
-    padding-bottom: 60px;
-}
-
-.mybtn {
-    width: 100%;
-}
-
-.list > table {
-    margin: 20px 0;
-    font-size: 18px;
 }

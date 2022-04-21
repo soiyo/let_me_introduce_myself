@@ -1,128 +1,150 @@
-<!-- grid -->
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
             rel="stylesheet"
             integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
             crossorigin="anonymous"
         />
-
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
             crossorigin="anonymous"
         ></script>
-
         <title>사이트이름</title>
-        <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet" />
         <link href="{{ url_for('static', filename='style_personal.css') }}" rel="stylesheet" />
         <script src="{{ url_for('static', filename='script_personal.js') }}"></script>
         <style>
-            * {
-                font-family: 'LeferiPoint-WhiteObliqueA';
+            .grid-container {
+                display: grid;
+                margin: 25px 25px 25px 25px;
+                padding: 10px;
+                background-color: #EFE8D5;
+            }
+
+            .grid-item {
+                margin: 60px;
+                padding: 10px;
+            }
+
+            .container1 {
+                grid-template-columns: repeat(2, 30% 70%);
             }
         </style>
     </head>
     <body>
-        <div class="wrap">
-            <div class="grid">
-                <div class="grid_item first">
-                    <img src="../static/images/test_3_1.png" class="card-img-top" alt="..." height="300" />
-                    <p style="font-size: 25pt">제목</p>
-                    <p style="font-size: 15pt">소제목</p>
+        <div class="grid-container container1">
+            <div class="grid-item">
+                <img src="../static/images/test_4_1.png" class="card-img-top" alt="..." />미래의 집사
+                <p style="font-size: 25pt">윤가현</p>
+            </div>
+
+            <div class="grid-item">
+                <div>
+                <a href="/">
+                    <button class="w-btn w-btn-green center" type="button" style="float: right">홈으로 가기</button>
+                </a>
+                <p style="font-size: 25pt"><br></br>안녕하세요, 킹콩파워팀의 윤가현입니다!</p>
+                <p style="font-size: 15pt">고양이를 아주 좋아합니다</p>
+                안녕하세요:활짝_웃다: 저는 킹콩파워팀의 윤가현입니다!
+                어려서부터 뭔가를 ‘창작‘하고 ‘만드’는걸 좋아했었습니다 :망치와_렌치:
+                세상엔 재밌는게 너무나 많고 그 중 OO만들기는 더더욱 재밌어 합니다 :휴식:
+                (ex: 3D모델링해서 출력, 음악만들기, 그림그리기, 3D펜 사용해서 만들기)
+                지금은 휴학하면서 팀 킹콩파워에 속해 웹사이트를 만들고 있습니다 :)
+                코딩을 하면서 알면 알수록 이보다 더 재밌는게 있으려나? 라고 생각이 들어서 항상 더 배우고 싶습니다ㅣ
+                적극적인 피드백은 언제나 수용입니다
+                이번 프로젝트에서는 원하는 기능을 실제로 구현하는걸 목표로 하고 있습니다!
+                MBTI는 철현님과 같은 INTP 입니다! (A,T는 반복해서 나와서 ㅎㅎ)
+                모든 일에 최선을 다해 임하고 맡은일은 끝까지 해내려고 하는 것이 저의 장점이라고 생각합니다!
+                어제보다 오늘의 나에 집중하며 매일 발전이 있는 삶을 추구하는것도 하나의 장점이라고 생각합니다
+                협업할때의 장점은 피드백이나 의견을 수용하는데 있어서 거리낌이 없습니다! 또 의견을 내는것도 마다하지 않습니다!
+                끝으로, 저의 최종 목표는 누구에게나 친숙한 서비스를 만드는 개발자가 되는 것입니다. 감사합니다 (Thank you)
+                <hr />
                 </div>
-                <div class="grid_item two">
-                    <div><p style="font-size: 25pt">안녕하세요, 킹콩파워팀의 4번입니다!</p></div>
-                    <p style="font-size: 15pt">제가 맡고 있는 것은 4번입니다!</p>
 
-                    <div class=""></div>
-                    <div class="list">
-                        <h3>방명록을 남겨보세요!</h3>
-                        <p>
-                            여기에 작성하세요!<br />
-                            ex) 저는 고양이를 키우고 있습니다. 이름은 야옹이에요!
-                        </p>
-                        <div class="order-info">
-                            <div class="input-group mb-3">
-                                <span class="input-group-text">닉네임</span>
-                                <input id="name" type="text" class="form-control" />
-                                <span class="input-group-text">댓글</span>
-                                <input id="hi" type="text" class="form-control" />
+                <div>
+                    <h3><br></br>방명록을 남겨보세요!</h3>
+                    <p>
+                        이곳은 킹콩파워팀 방명록 입니다!<br />
+                        ex) 저는 고양이를 키우고 있습니다. 이름은 야옹이에요!
+                    </p>
+
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">닉네임</span>
+                        <input id="name" type="text" class="form-control" />
+                        <span class="input-group-text">댓글</span>
+                        <input id="hi" type="text" class="form-control" />
+                    </div>
+
+                    <button onclick="save()" type="button" class="w-btn w-btn-green grid_item cent">방명록 남기기</button>
+                    
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col" color="red">닉네임</th>
+                                <th scope="col">댓글</th>
+                            </tr>
+                        </thead>
+                        <tbody id="box">ㅤ<br></br></tbody>
+                    </table>
+                </div>
+                
+                <div>
+                <p style="font-size: 18pt"><br></br>킹콩파워 팀원을 더 알고싶나요?</p>
+
+                <div class="row row-cols-1 row-cols-md-4 g-4 cardplus">
+                    <a href="/getPerson1">
+                        <div class="col center">
+                            <div class="card h-100 w-btn">
+                                <img src="../static/images/test_1.png" class="card-img-top" alt="..." />
+                                <div class="card-body">
+                                    <h5 class="card-title">김태인</h5>
+                                    <p class="card-text">킹콩팀장</p>
+                                    <div class="center">
+                                        <button onclick="git_link_taein()" class="w-btn" type="button"><img src="../static/images/git_image.png" width="50px" height="50px" /></button>
+                                        <button onclick="blog_link_taein()" class="w-btn" type="button"><img src="../static/images/blog_image.png" width="50px" height="50px" /></button>
+                                    </div>
+                                </div>
                             </div>
-
-                            <button onclick="save()" type="button" class="btn btn-warning mybtn">방명록 남기기</button>
                         </div>
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th scope="col">닉네임</th>
-                                    <th scope="col">댓글</th>
-                                </tr>
-                            </thead>
-                            <tbody id="box"></tbody>
-                        </table>
-                    </div>
-
-                    <p style="font-size: 15pt">그 외 자기소개 글!</p>
-                    <a href="/">
-                        <button class="w-btn w-btn-green" type="button">홈으로가기</button>
                     </a>
-                    <div class="row row-cols-1 row-cols-md-4 g-4">
-                        <a href="/getPerson1">
-                            <div class="col center">
-                                <div class="card h-100 w-btn">
-                                    <img src="../static/images/test_1.png" class="card-img-top" alt="..." />
-                                    <div class="card-body">
-                                        <h5 class="card-title">킹콩파워팀1번</h5>
-                                        <p class="card-text">밤담당</p>
-                                        <div class="center">
-                                            <button onclick="git_link_gahyeon()" class="w-btn" type="button"><img src="../static/images/git_image.png" width="50px" height="50px" /></button>
-                                            <button onclick="blog_link_gahyeon()" class="w-btn" type="button"><img src="../static/images/velog_image.png" width="50px" height="50px" /></button>
-                                        </div>
+                    <a href="/getPerson2">
+                        <div class="col center">
+                            <div class="card h-100 w-btn">
+                                <img src="../static/images/test_2.png" class="card-img-top" alt="..." />
+                                <div class="card-body">
+                                    <h5 class="card-title">김철현</h5>
+                                    <p class="card-text">지원담당</p>
+                                    <div class="center">
+                                        <button onclick="git_link_kimmyjay()" class="w-btn" type="button"><img src="../static/images/git_image.png" width="50px" height="50px" /></button>
+                                        <button onclick="blog_link_kimmyjay()" class="w-btn" type="button"><img src="../static/images/blog_image.png" width="50px" height="50px" /></button>
                                     </div>
                                 </div>
                             </div>
-                        </a>
-                        <a href="/getPerson2">
-                            <div class="col center">
-                                <div class="card h-100 w-btn">
-                                    <img src="../static/images/test_2.png" class="card-img-top" alt="..." />
-                                    <div class="card-body">
-                                        <h5 class="card-title">킹콩파워팀2번</h5>
-                                        <p class="card-text">청소담당</p>
-                                        <div class="center">
-                                            <button onclick="git_link_gahyeon()" class="w-btn" type="button"><img src="../static/images/git_image.png" width="50px" height="50px" /></button>
-                                            <button onclick="blog_link_gahyeon()" class="w-btn" type="button"><img src="../static/images/velog_image.png" width="50px" height="50px" /></button>
-                                        </div>
+                        </div>
+                    </a>
+                    <a href="/getPerson3">
+                        <div class="col center">
+                            <div class="card h-100 w-btn">
+                                <img src="../static/images/test_3.png" class="card-img-top" alt="..." />
+                                <div class="card-body">
+                                    <h5 class="card-title">문명주</h5>
+                                    <p class="card-text">OO담당</p>
+                                    <div class="center">
+                                        <button onclick="git_link_mun()" class="w-btn" type="button"><img src="../static/images/git_image.png" width="50px" height="50px" /></button>
+                                        <button onclick="blog_link_mun()" class="w-btn" type="button"><img src="../static/images/blog_image.png" width="50px" height="50px" /></button>
                                     </div>
                                 </div>
                             </div>
-                        </a>
-                        <a href="/getPerson3">
-                            <div class="col center">
-                                <div class="card h-100 w-btn">
-                                    <img src="../static/images/test_3.png" class="card-img-top" alt="..." />
-                                    <div class="card-body">
-                                        <h5 class="card-title">킹콩파워팀3번</h5>
-                                        <p class="card-text">설거지담당</p>
-                                        <div class="center">
-                                            <button onclick="git_link_gahyeon()" class="w-btn" type="button"><img src="../static/images/git_image.png" width="50px" height="50px" /></button>
-                                            <button onclick="blog_link_gahyeon()" class="w-btn" type="button"><img src="../static/images/velog_image.png" width="50px" height="50px" /></button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                        </div>
+                    </a>
                 </div>
-                <!-- <div class="grid_item third"></div> -->
+                </div>
             </div>
         </div>
     </body>

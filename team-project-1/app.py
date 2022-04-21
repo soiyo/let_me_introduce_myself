@@ -1,5 +1,5 @@
 from pymongo import MongoClient
-client = MongoClient('클러스터URL')
+client = MongoClient('클러스터 URL')
 db = client.team
 
 from flask import Flask, render_template, request, jsonify
@@ -40,8 +40,8 @@ def web_post():
 
 @app.route("/profile", methods=["GET"])
 def web_get():
-    intro_list = list(db.introduce.find({},{'_id':False})) #db.mars라는 곳에서 찾기(모든 내역, id제외)
-    return jsonify({'intro': intro_list}) #orders라는 키로 order_list 찾은거 내려줌
+    intro_list = list(db.introduce.find({},{'_id':False})) 
+    return jsonify({'intro': intro_list})
 
 if __name__ == '__main__':
     app.run('0.0.0.0', port=5000, debug=True)
