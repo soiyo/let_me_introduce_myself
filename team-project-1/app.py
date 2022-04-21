@@ -1,5 +1,5 @@
 from pymongo import MongoClient
-client = MongoClient('클러스터 URL')
+client = MongoClient('클러스터URL')
 db = client.team
 
 from flask import Flask, render_template, request, jsonify, redirect
