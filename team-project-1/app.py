@@ -36,7 +36,7 @@ def getpeople3():
 @app.route('/gitmun') 
 def gitmun(): return redirect("https://github.com/ansaudwn1234")
 
-@app.route('/blggmun') 
+@app.route('/blgmun') 
 def blgmun(): return redirect("https://velog.io/@ansaudwn123")
 
 @app.route('/getPerson4')
